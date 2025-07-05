@@ -135,7 +135,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe sections and cards
-document.querySelectorAll('section, .service-card, .solution-card').forEach(element => {
+document.querySelectorAll('section, .service-card').forEach(element => {
     element.style.opacity = '0';
     element.style.transform = 'translateY(30px)';
     element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
@@ -145,51 +145,51 @@ document.querySelectorAll('section, .service-card, .solution-card').forEach(elem
 // Contact form handling
 const contactForm = document.getElementById('contactForm');
 
-contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = new FormData(this);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const phone = formData.get('phone');
-    const company = formData.get('company');
-    const service = formData.get('service');
-    const message = formData.get('message');
-    
-    // Create WhatsApp message
-    let whatsappMessage = `*Nova solicitação de orçamento - CodingTech*%0A%0A`;
-    whatsappMessage += `*Nome:* ${name}%0A`;
-    whatsappMessage += `*Email:* ${email}%0A`;
-    if (phone) whatsappMessage += `*Telefone:* ${phone}%0A`;
-    if (company) whatsappMessage += `*Empresa:* ${company}%0A`;
-    whatsappMessage += `*Serviço:* ${service}%0A%0A`;
-    whatsappMessage += `*Mensagem:*%0A${message}`;
-    
-    const whatsappURL = `https://api.whatsapp.com/send?phone=5575992387468&text=${whatsappMessage}`;
-    
-    // Show loading state
-    const submitBtn = this.querySelector('button[type="submit"]');
-    const originalText = submitBtn.innerHTML;
-    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
-    submitBtn.disabled = true;
-    
-    // Simulate processing time
-    setTimeout(() => {
-        // Open WhatsApp
-        window.open(whatsappURL, '_blank');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
         
-        // Reset form
-        this.reset();
+        // Get form data
+        const formData = new FormData(this);
+        const name = formData.get('name');
+        const email = formData.get('email');
+        const phone = formData.get('phone');
+        const service = formData.get('service');
+        const message = formData.get('message');
         
-        // Reset button
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
+        // Create WhatsApp message
+        let whatsappMessage = `*Solicitação de Serviço - Diogo Santos*%0A%0A`;
+        whatsappMessage += `*Nome:* ${name}%0A`;
+        whatsappMessage += `*Email:* ${email}%0A`;
+        if (phone) whatsappMessage += `*WhatsApp:* ${phone}%0A`;
+        whatsappMessage += `*Serviço:* ${service}%0A%0A`;
+        whatsappMessage += `*Mensagem:*%0A${message}`;
         
-        // Show success message
-        showNotification('Mensagem enviada! Você será redirecionado para o WhatsApp.', 'success');
-    }, 1000);
-});
+        const whatsappURL = `https://api.whatsapp.com/send?phone=5575992387468&text=${whatsappMessage}`;
+        
+        // Show loading state
+        const submitBtn = this.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+        submitBtn.disabled = true;
+        
+        // Simulate processing time
+        setTimeout(() => {
+            // Open WhatsApp
+            window.open(whatsappURL, '_blank');
+            
+            // Reset form
+            this.reset();
+            
+            // Reset button
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+            
+            // Show success message
+            showNotification('Mensagem enviada! Você será redirecionado para o WhatsApp.', 'success');
+        }, 1000);
+    });
+}
 
 // Notification system
 function showNotification(message, type = 'info') {
@@ -307,30 +307,21 @@ window.addEventListener('load', () => {
 document.querySelectorAll('.service-card').forEach(card => {
     card.addEventListener('mouseenter', () => {
         const icon = card.querySelector('.service-icon');
-        icon.style.transform = 'scale(1.1) rotate(5deg)';
+        if (icon) {
+            icon.style.transform = 'scale(1.1) rotate(5deg)';
+        }
     });
     
     card.addEventListener('mouseleave', () => {
         const icon = card.querySelector('.service-icon');
-        icon.style.transform = 'scale(1) rotate(0deg)';
+        if (icon) {
+            icon.style.transform = 'scale(1) rotate(0deg)';
+        }
     });
 });
 
-// Solution card animations
-document.querySelectorAll('.solution-card').forEach(card => {
-    card.addEventListener('mouseenter', () => {
-        const header = card.querySelector('.solution-header');
-        header.style.transform = 'scale(1.02)';
-    });
-    
-    card.addEventListener('mouseleave', () => {
-        const header = card.querySelector('.solution-header');
-        header.style.transform = 'scale(1)';
-    });
-});
-
-// Tech stack item interactions
-document.querySelectorAll('.tech-item').forEach(item => {
+// Experience item interactions
+document.querySelectorAll('.experience-item').forEach(item => {
     item.addEventListener('click', () => {
         item.style.transform = 'scale(0.95)';
         setTimeout(() => {
