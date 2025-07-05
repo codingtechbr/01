@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diogo Santos - Desenvolvedor Full Stack</title>
+    <title>CodingTech - Soluções Tecnológicas Inovadoras</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -14,15 +14,18 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo-text">DS</span>
+                <span class="logo-icon"><i class="fas fa-code"></i></span>
+                <span class="logo-text">CodingTech</span>
             </div>
             <div class="nav-menu">
                 <a href="#home" class="nav-link">Início</a>
+                <a href="#services" class="nav-link">Serviços</a>
+                <a href="#solutions" class="nav-link">Soluções</a>
                 <a href="#about" class="nav-link">Sobre</a>
-                <a href="#skills" class="nav-link">Habilidades</a>
-                <a href="#projects" class="nav-link">Projetos</a>
-                <a href="portfolio.html" class="nav-link">Portfólio</a>
                 <a href="#contact" class="nav-link">Contato</a>
+            </div>
+            <div class="nav-cta">
+                <a href="#contact" class="btn btn-primary">Solicitar Orçamento</a>
             </div>
             <div class="nav-toggle">
                 <span></span>
@@ -34,392 +37,514 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+        </div>
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="hero-title">
-                        Olá, eu sou <span class="gradient-text">Diogo Santos</span>
+                        Transformamos <span class="gradient-text">Ideias</span> em 
+                        <span class="gradient-text">Soluções Digitais</span>
                     </h1>
-                    <p class="hero-subtitle">Desenvolvedor Full Stack & Designer Digital</p>
+                    <p class="hero-subtitle">Desenvolvimento • Consultoria • Inovação</p>
                     <p class="hero-description">
-                        Transformo ideias em experiências digitais incríveis. Especializado em desenvolvimento web moderno, 
-                        design de interfaces e soluções tecnológicas inovadoras.
+                        A CodingTech é especializada em desenvolvimento de software, consultoria em TI e 
+                        soluções tecnológicas personalizadas. Oferecemos desde desenvolvimento web e mobile 
+                        até sistemas de segurança avançados e inteligência artificial.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">Ver Projetos</a>
-                        <a href="portfolio.html" class="btn btn-secondary">Meu Portfólio</a>
+                        <a href="#services" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            Nossos Serviços
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i>
+                            Fale Conosco
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projetos Entregues</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">Clientes Satisfeitos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Anos de Experiência</span>
+                        </div>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <div class="profile-card">
-                        <div class="profile-image">
-                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Diogo Santos">
+                <div class="hero-visual">
+                    <div class="tech-showcase">
+                        <div class="tech-card" style="--delay: 0s">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
                         </div>
-                        <div class="floating-elements">
-                            <div class="floating-icon" style="--delay: 0s">
-                                <i class="fab fa-react"></i>
-                            </div>
-                            <div class="floating-icon" style="--delay: 1s">
-                                <i class="fab fa-js-square"></i>
-                            </div>
-                            <div class="floating-icon" style="--delay: 2s">
-                                <i class="fab fa-node-js"></i>
-                            </div>
-                            <div class="floating-icon" style="--delay: 3s">
-                                <i class="fab fa-python"></i>
-                            </div>
+                        <div class="tech-card" style="--delay: 0.2s">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-card" style="--delay: 0.4s">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-card" style="--delay: 0.6s">
+                            <i class="fas fa-database"></i>
+                            <span>Database</span>
+                        </div>
+                        <div class="tech-card" style="--delay: 0.8s">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Security</span>
+                        </div>
+                        <div class="tech-card" style="--delay: 1s">
+                            <i class="fas fa-brain"></i>
+                            <span>AI/ML</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <p class="section-subtitle">Soluções completas em tecnologia para impulsionar seu negócio</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Desenvolvimento Web -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="service-title">Desenvolvimento Web</h3>
+                    <p class="service-description">
+                        Sites responsivos, aplicações web modernas e sistemas personalizados 
+                        utilizando as mais recentes tecnologias do mercado.
+                    </p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Sites Responsivos</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>E-commerce</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Sistemas Web</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>APIs REST</span>
+                        </div>
+                    </div>
+                    <div class="service-tech">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Vue.js</span>
+                        <span class="tech-badge">Node.js</span>
+                    </div>
+                </div>
+
+                <!-- Desenvolvimento Mobile -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">Desenvolvimento Mobile</h3>
+                    <p class="service-description">
+                        Aplicativos nativos e híbridos para iOS e Android, com foco em 
+                        performance, usabilidade e experiência do usuário.
+                    </p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Apps Nativos</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Apps Híbridos</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>UI/UX Design</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Publicação nas Stores</span>
+                        </div>
+                    </div>
+                    <div class="service-tech">
+                        <span class="tech-badge">React Native</span>
+                        <span class="tech-badge">Flutter</span>
+                        <span class="tech-badge">Swift</span>
+                    </div>
+                </div>
+
+                <!-- Consultoria em TI -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-title">Consultoria em TI</h3>
+                    <p class="service-description">
+                        Análise, planejamento e implementação de soluções tecnológicas 
+                        para otimizar processos e aumentar a eficiência do seu negócio.
+                    </p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Análise de Sistemas</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Arquitetura de Software</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Otimização de Processos</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Treinamento de Equipes</span>
+                        </div>
+                    </div>
+                    <div class="service-tech">
+                        <span class="tech-badge">DevOps</span>
+                        <span class="tech-badge">Cloud</span>
+                        <span class="tech-badge">Agile</span>
+                    </div>
+                </div>
+
+                <!-- Segurança Digital -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="service-title">Segurança Digital</h3>
+                    <p class="service-description">
+                        Soluções avançadas de segurança, incluindo desenvolvimento de 
+                        antivírus personalizados e sistemas de proteção de dados.
+                    </p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Antivírus Personalizado</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Auditoria de Segurança</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Proteção de Dados</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Monitoramento 24/7</span>
+                        </div>
+                    </div>
+                    <div class="service-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Machine Learning</span>
+                        <span class="tech-badge">Cybersecurity</span>
+                    </div>
+                </div>
+
+                <!-- Inteligência Artificial -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="service-title">Inteligência Artificial</h3>
+                    <p class="service-description">
+                        Desenvolvimento de soluções com IA para automação, análise de dados 
+                        e sistemas inteligentes de tomada de decisão.
+                    </p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Machine Learning</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Processamento de Linguagem</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Análise Preditiva</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Automação Inteligente</span>
+                        </div>
+                    </div>
+                    <div class="service-tech">
+                        <span class="tech-badge">TensorFlow</span>
+                        <span class="tech-badge">PyTorch</span>
+                        <span class="tech-badge">OpenAI</span>
+                    </div>
+                </div>
+
+                <!-- Suporte Técnico -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="service-title">Suporte Técnico</h3>
+                    <p class="service-description">
+                        Suporte especializado para hospitais, clínicas e empresas, 
+                        garantindo funcionamento contínuo dos sistemas críticos.
+                    </p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Suporte 24/7</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Manutenção Preventiva</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Backup e Recuperação</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Monitoramento Remoto</span>
+                        </div>
+                    </div>
+                    <div class="service-tech">
+                        <span class="tech-badge">Windows Server</span>
+                        <span class="tech-badge">Linux</span>
+                        <span class="tech-badge">Cloud Computing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Soluções Especializadas</h2>
+                <p class="section-subtitle">Casos de sucesso e soluções inovadoras que desenvolvemos</p>
+            </div>
+            
+            <div class="solutions-grid">
+                <!-- Sistemas Hospitalares -->
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <div class="solution-icon">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <h3 class="solution-title">Sistemas Hospitalares</h3>
+                    </div>
+                    <div class="solution-content">
+                        <p class="solution-description">
+                            Prestamos serviços especializados para hospitais e clínicas, 
+                            desenvolvendo e mantendo sistemas críticos para área da saúde.
+                        </p>
+                        <div class="clients-showcase">
+                            <h4>Nossos Clientes:</h4>
+                            <div class="client-logos">
+                                <div class="client-logo">
+                                    <img src="midia/CFS-LOGO.jpg" alt="Hospital CFS">
+                                    <span>Hospital CFS</span>
+                                </div>
+                                <div class="client-logo">
+                                    <img src="midia/LOGO-CAMARA.png" alt="Clínica Câmara">
+                                    <span>Clínica Câmara</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="solution-features">
+                            <span class="feature-tag">Sistemas de Gestão</span>
+                            <span class="feature-tag">Prontuário Eletrônico</span>
+                            <span class="feature-tag">Integração TISS</span>
+                            <span class="feature-tag">Backup Seguro</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Antivírus Personalizado -->
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <div class="solution-icon">
+                            <i class="fas fa-virus-slash"></i>
+                        </div>
+                        <h3 class="solution-title">Antivírus Personalizado</h3>
+                    </div>
+                    <div class="solution-content">
+                        <p class="solution-description">
+                            Desenvolvemos um programa antivírus customizado com detecção 
+                            avançada de ameaças usando inteligência artificial.
+                        </p>
+                        <div class="solution-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-brain"></i>
+                                <div>
+                                    <h5>IA Avançada</h5>
+                                    <p>Detecção inteligente de malware</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h5>Tempo Real</h5>
+                                    <p>Proteção contínua e instantânea</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-cog"></i>
+                                <div>
+                                    <h5>Customizável</h5>
+                                    <p>Adaptado às necessidades específicas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="solution-features">
+                            <span class="feature-tag">Zero False Positive</span>
+                            <span class="feature-tag">Machine Learning</span>
+                            <span class="feature-tag">Interface Intuitiva</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IA Investigativa -->
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <div class="solution-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="solution-title">IA Investigativa</h3>
+                    </div>
+                    <div class="solution-content">
+                        <p class="solution-description">
+                            Utilizamos inteligência artificial para investigações pessoais 
+                            e localização de pessoas, com resultados impressionantes.
+                        </p>
+                        <div class="success-story">
+                            <div class="story-header">
+                                <i class="fas fa-heart"></i>
+                                <h5>Caso de Sucesso</h5>
+                            </div>
+                            <p class="story-text">
+                                "Através da nossa IA investigativa, conseguimos encontrar o pai de uma 
+                                cliente que ela não sabia nem que estava vivo, reunindo a família após anos de separação."
+                            </p>
+                            <div class="story-impact">
+                                <span class="impact-metric">100% Sucesso</span>
+                                <span class="impact-metric">Família Reunida</span>
+                                <span class="impact-metric">Tecnologia Humanizada</span>
+                            </div>
+                        </div>
+                        <div class="solution-features">
+                            <span class="feature-tag">Busca Avançada</span>
+                            <span class="feature-tag">Análise de Dados</span>
+                            <span class="feature-tag">Resultados Reais</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Sobre Mim</h2>
-                <p class="section-subtitle">Conheça minha jornada e experiência</p>
-            </div>
             <div class="about-content">
                 <div class="about-text">
+                    <div class="section-header">
+                        <h2 class="section-title">Sobre a CodingTech</h2>
+                        <p class="section-subtitle">Inovação e excelência em cada projeto</p>
+                    </div>
                     <p class="about-description">
-                        Sou um desenvolvedor apaixonado por tecnologia com mais de 3 anos de experiência 
-                        criando soluções digitais inovadoras. Minha jornada começou com curiosidade sobre 
-                        como as coisas funcionam na web, e hoje trabalho com as mais modernas tecnologias 
-                        do mercado.
+                        A CodingTech é uma empresa especializada em desenvolvimento de software e 
+                        consultoria em tecnologia. Com mais de 3 anos de experiência no mercado, 
+                        oferecemos soluções inovadoras e personalizadas para empresas de todos os portes.
                     </p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="50">0</span>
-                            <span class="stat-label">Projetos Concluídos</span>
+                    <p class="about-description">
+                        Nossa equipe é formada por profissionais altamente qualificados, sempre 
+                        atualizados com as mais recentes tecnologias e metodologias do mercado. 
+                        Trabalhamos com foco na qualidade, eficiência e satisfação do cliente.
+                    </p>
+                    <div class="about-values">
+                        <div class="value-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <div>
+                                <h4>Inovação</h4>
+                                <p>Sempre buscando as melhores soluções tecnológicas</p>
+                            </div>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="3">0</span>
-                            <span class="stat-label">Anos de Experiência</span>
+                        <div class="value-item">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Qualidade</h4>
+                                <p>Excelência em cada linha de código</p>
+                            </div>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="25">0</span>
-                            <span class="stat-label">Clientes Satisfeitos</span>
+                        <div class="value-item">
+                            <i class="fas fa-handshake"></i>
+                            <div>
+                                <h4>Parceria</h4>
+                                <p>Relacionamento duradouro com nossos clientes</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="about-image">
-                    <div class="image-container">
-                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Workspace">
-                        <div class="image-overlay"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Habilidades</h2>
-                <p class="section-subtitle">Tecnologias que domino</p>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="category-title">Frontend</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-html5"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">HTML5</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="95%"></div>
+                <div class="about-visual">
+                    <div class="tech-stack">
+                        <h4>Nossa Stack Tecnológica</h4>
+                        <div class="tech-categories">
+                            <div class="tech-category">
+                                <h5>Frontend</h5>
+                                <div class="tech-items">
+                                    <span class="tech-item">React</span>
+                                    <span class="tech-item">Vue.js</span>
+                                    <span class="tech-item">Angular</span>
+                                    <span class="tech-item">TypeScript</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-css3-alt"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">CSS3</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="90%"></div>
+                            <div class="tech-category">
+                                <h5>Backend</h5>
+                                <div class="tech-items">
+                                    <span class="tech-item">Node.js</span>
+                                    <span class="tech-item">Python</span>
+                                    <span class="tech-item">PHP</span>
+                                    <span class="tech-item">Java</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-js-square"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">JavaScript</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="88%"></div>
+                            <div class="tech-category">
+                                <h5>Database</h5>
+                                <div class="tech-items">
+                                    <span class="tech-item">MongoDB</span>
+                                    <span class="tech-item">PostgreSQL</span>
+                                    <span class="tech-item">MySQL</span>
+                                    <span class="tech-item">Redis</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-react"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">React</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="85%"></div>
+                            <div class="tech-category">
+                                <h5>Cloud & DevOps</h5>
+                                <div class="tech-items">
+                                    <span class="tech-item">AWS</span>
+                                    <span class="tech-item">Docker</span>
+                                    <span class="tech-item">Kubernetes</span>
+                                    <span class="tech-item">CI/CD</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3 class="category-title">Backend</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-node-js"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Node.js</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="82%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-python"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Python</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="78%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-database"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">MongoDB</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="75%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-server"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Express.js</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="80%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="category-title">Ferramentas</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-git-alt"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Git</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="90%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-figma"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Figma</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="85%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-docker"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Docker</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="70%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-aws"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">AWS</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="65%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Projetos</h2>
-                <p class="section-subtitle">Alguns dos meus trabalhos recentes</p>
-            </div>
-            <div class="projects-filter">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="mobile">Mobile</button>
-                <button class="filter-btn" data-filter="design">Design</button>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="E-commerce Platform">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">E-commerce Platform</h3>
-                        <p class="project-description">Plataforma completa de e-commerce com painel administrativo, sistema de pagamentos e gestão de estoque.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="mobile">
-                    <div class="project-image">
-                        <img src="https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Social Media App">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Social Media App</h3>
-                        <p class="project-description">Aplicativo de rede social com funcionalidades de chat em tempo real, stories e sistema de notificações.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Socket.io</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dashboard Analytics">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Dashboard Analytics</h3>
-                        <p class="project-description">Dashboard interativo para análise de dados com gráficos dinâmicos e relatórios personalizáveis.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">D3.js</span>
-                            <span class="tech-tag">Python</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="design">
-                    <div class="project-image">
-                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Brand Identity">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-behance"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Brand Identity</h3>
-                        <p class="project-description">Identidade visual completa para startup de tecnologia, incluindo logo, paleta de cores e guidelines.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Figma</span>
-                            <span class="tech-tag">Illustrator</span>
-                            <span class="tech-tag">Photoshop</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Portfolio Website">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Portfolio Website</h3>
-                        <p class="project-description">Site portfólio responsivo com animações suaves e design moderno para artista digital.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="mobile">
-                    <div class="project-image">
-                        <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Fitness Tracker">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Fitness Tracker</h3>
-                        <p class="project-description">App de acompanhamento fitness com integração de wearables e planos de treino personalizados.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Dart</span>
-                            <span class="tech-tag">Firebase</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="projects-cta">
-                <a href="portfolio.html" class="btn btn-primary">Ver Portfólio Completo</a>
             </div>
         </div>
     </section>
@@ -428,60 +553,108 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Vamos Trabalhar Juntos</h2>
-                <p class="section-subtitle">Entre em contato para discutir seu próximo projeto</p>
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">Vamos discutir como podemos ajudar seu negócio a crescer</p>
             </div>
+            
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
+                    <div class="contact-card">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="contact-details">
                             <h4>Email</h4>
-                            <p>diogo@exemplo.com</p>
+                            <p>contato@codingtech.com.br</p>
+                            <p>comercial@codingtech.com.br</p>
                         </div>
                     </div>
-                    <div class="contact-item">
+                    
+                    <div class="contact-card">
                         <div class="contact-icon">
                             <i class="fas fa-phone"></i>
                         </div>
                         <div class="contact-details">
                             <h4>Telefone</h4>
                             <p>+55 (75) 99238-7468</p>
+                            <p>Atendimento: Seg-Sex 8h às 18h</p>
                         </div>
                     </div>
-                    <div class="contact-item">
+                    
+                    <div class="contact-card">
                         <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="contact-details">
                             <h4>Localização</h4>
                             <p>Feira de Santana, BA</p>
+                            <p>Atendimento em todo o Brasil</p>
                         </div>
                     </div>
+                    
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nome Completo</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Seu Email" required>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Empresa</label>
+                                <input type="text" id="company" name="company">
+                            </div>
                         </div>
+                        
                         <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Assunto" required>
+                            <label for="service">Serviço de Interesse</label>
+                            <select id="service" name="service" required>
+                                <option value="">Selecione um serviço</option>
+                                <option value="desenvolvimento-web">Desenvolvimento Web</option>
+                                <option value="desenvolvimento-mobile">Desenvolvimento Mobile</option>
+                                <option value="consultoria-ti">Consultoria em TI</option>
+                                <option value="seguranca-digital">Segurança Digital</option>
+                                <option value="inteligencia-artificial">Inteligência Artificial</option>
+                                <option value="suporte-tecnico">Suporte Técnico</option>
+                                <option value="outros">Outros</option>
+                            </select>
                         </div>
+                        
                         <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Sua Mensagem" rows="6" required></textarea>
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Descreva seu projeto ou necessidade..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensagem
+                        </button>
                     </form>
                 </div>
             </div>
@@ -492,8 +665,58 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Diogo Santos. Todos os direitos reservados.</p>
-                <p>Desenvolvido com <i class="fas fa-heart"></i> e muito café</p>
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon"><i class="fas fa-code"></i></span>
+                        <span class="logo-text">CodingTech</span>
+                    </div>
+                    <p class="footer-description">
+                        Transformando ideias em soluções digitais inovadoras. 
+                        Sua parceira em tecnologia para o futuro.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Serviços</h4>
+                        <ul>
+                            <li><a href="#services">Desenvolvimento Web</a></li>
+                            <li><a href="#services">Desenvolvimento Mobile</a></li>
+                            <li><a href="#services">Consultoria em TI</a></li>
+                            <li><a href="#services">Segurança Digital</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#about">Sobre Nós</a></li>
+                            <li><a href="#solutions">Soluções</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                            <li><a href="#">Política de Privacidade</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><i class="fas fa-envelope"></i> contato@codingtech.com.br</li>
+                            <li><i class="fas fa-phone"></i> +55 (75) 99238-7468</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Feira de Santana, BA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodingTech. Todos os direitos reservados.</p>
+                <p>Desenvolvido com <i class="fas fa-heart"></i> e tecnologia de ponta</p>
             </div>
         </div>
     </footer>
